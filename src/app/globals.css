@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Lora|Playfair+Display:700i,900");
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --mainGreen: #009b72;
+}
+
+body {
+  font-family: "Nunito";
+}
+
+/* navbar css */
+.pa_navbar .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-weight: 700;
+}
+.pa_navbar .nav-link:hover {
+  color: var(--mainGreen);
+}
+.navBtn .btn {
+  background-color: var(--mainGreen);
+  border: 1px solid var(--mainGreen);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 21px;
+  border-radius: 100px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+.navBtn .btn:focus {
+  box-shadow: 0 0 0 0.25rem rgb(0 155 114 / 22%);
+}
+.navBtn .btn:hover {
+  background-color: transparent;
+  color: var(--mainGreen);
+}
+
+.pa_navbar .navbar-toggler {
+  padding: 0px;
+  background-color: #449c73ed;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  box-shadow: none;
+}
+
+/*--end navbar css--*/
+
+/*--start banner css--*/
+.pa_bannerLeft h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #2c3038;
+}
+mark {
+  color: inherit;
+  padding: 0;
+  background: none;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 193, 7, 0.4) 0%,
+    rgba(255, 193, 7, 0.4) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 0.3em;
+  background-position: 0 80%;
+  position: relative;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.pa_bannerLeft p {
+  color: #555a64;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.window {
+  border-radius: 3px;
+  background: #222;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+.window:before {
+  content: " ";
+  display: block;
+  height: 48px;
+  background: #c6c6c6;
+}
+.terminal {
+  margin: 20px;
+  font-family: monospace;
+  font-size: 14px;
+  color: #22da26;
+  height: 290px;
+}
+.terminal .command {
+  width: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: write-command 4s both;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.terminal .command:before {
+  content: "$ ";
+  color: #22da26;
+}
+.terminal .htresults {
+  width: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  color: #c6c6c6;
+  animation: write-command 1s both;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+.window:after {
+  content: ". . .";
+  position: absolute;
+  text-align: left;
+  left: 12px;
+  right: 0;
+  top: -3px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 96px;
+  color: #fff;
+  line-height: 0;
+  letter-spacing: -12px;
+}
+.pa_banner {
+  padding: 80px 0px;
+  border-top: 1px solid #eaedf2;
+  border-bottom: 1px solid #eaedf2;
+}
+.mainBtn {
+  color: #fff;
+  background-color: var(--mainGreen);
+  border-color: var(--mainGreen);
+  border-radius: 100px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 36px;
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid transparent;
+}
+.mainBtn:hover {
+  color: #fff;
+  background-color: #007556;
+  border-color: #00684c;
+}
+.mainBtn.mainBtnLight {
+  background-color: transparent;
+  border-color: rgba(0, 155, 114, 0.25);
+  color: var(--mainGreen);
+}
+.mainBtn.mainBtnLight:hover {
+  background-color: rgba(0, 155, 114, 0.2);
+}
+
+.banner-section {
+  height: 120vh;
+  background-image: url("/images/Saloni_singh_banner.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headline-text {
+  width: 100%;
+  color: #fff;
+}
+.headline-text h1 {
+  text-align: left;
+  text-wrap: break-word;
+}
+
+/*--end banner css--*/
+
+/*--start Responsive--*/
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .pa_navbar .nav-link {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .pa_navbar .nav-link {
+    font-size: 18px;
+  }
+  .navBtn .btn {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pa_navbar .nav-link {
+    font-size: 17px;
+  }
+  .navbar-nav {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .navBtn {
+    justify-content: center;
+  }
+  .navBtn .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .pa_navbar .navbar-brand img {
+    width: 100%;
+    max-width: 85%;
+  }
+  .pa_navbar .nav-link {
+    font-size: 16px;
+  }
+  .navbar-nav {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .navBtn {
+    justify-content: center;
+  }
+  .navBtn .btn {
+    font-size: 15px;
+  }
+}
+/* navbar css */
