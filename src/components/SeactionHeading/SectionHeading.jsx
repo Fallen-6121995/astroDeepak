@@ -1,8 +1,8 @@
 import React from 'react'
 
-function SectionHeading() {
+function SectionHeading({tagline,color,fontSize,fontWeight}) {
   return (
-    <div>SectionHeading</div>
+    <h2 style={{color:color,fontSize:fontSize, fontWeight:fontWeight}}>{tagline}</h2>
   )
 }
 

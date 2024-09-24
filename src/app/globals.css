@@ -6,6 +6,7 @@ img {
 
 :root {
   --mainGreen: #009b72;
+  --mainWhite: #fff;
 }
 
 body {
@@ -44,7 +45,7 @@ body {
 
 .pa_navbar .navbar-toggler {
   padding: 0px;
-  background-color: #449c73ed;
+  background-color: var(--mainGreen);
   width: 35px;
   height: 35px;
   border-radius: 50px;
@@ -177,7 +178,7 @@ mark {
 }
 .headline-text {
   width: 100%;
-  color: #fff;
+  color: var(--mainWhite);
 }
 .headline-text h1 {
   text-align: left;
@@ -185,6 +186,11 @@ mark {
 }
 
 /*--end banner css--*/
+
+.life-coach-sec {
+  padding: 40px 0px;
+  text-align: center;
+}
 
 /*--start Responsive--*/
 
