@@ -51,7 +51,7 @@ export default function Home() {
                 src="/images/Dr-Saloni-Singh.png"
               />
             </Col>
-            <SectionBtn label="CONNECT WITH ME" />
+            <SectionBtn link="/" label="CONNECT WITH ME" />
           </Row>
         </div>
       </div>
