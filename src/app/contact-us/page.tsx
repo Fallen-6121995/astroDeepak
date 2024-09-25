@@ -3,10 +3,13 @@ import SectionHeading from "@/components/SeactionHeading/SectionHeading";
 import { contacPageHeading } from "@/data";
 import React from "react";
 import { Col, Row, Form, FormGroup, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import SectionBtn from "../../components/sectionBtn/SectionBtn";
 
 function Contact() {
   return (
-    <div>
+    <div className="contactArea secPadding">
+       <Container>
       <SectionHeading
         tagline={contacPageHeading}
         color="#01464B"
@@ -14,7 +17,7 @@ function Contact() {
         fontWeight={600}
       />
       <Row>
-        <Col md={5}>
+        <Col md={4}>
           <SectionHeading
             tagline="Address:"
             color="#01464B"
@@ -36,7 +39,7 @@ function Contact() {
 
           <p>Coachsalonisingh@gmail.com</p>
         </Col>
-        <Col md={7}>
+        <Col md={8}>
           <Form>
             <Form.Group className="mb-3" controlId="formBasicName">
               <Form.Label>Name</Form.Label>
@@ -67,13 +70,21 @@ function Contact() {
                 </Form.Group>
               </Col>
             </Row>
-
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <Form.Group className="mb-3">
+            <Form.Label htmlfor="exampleFormControlTextarea1">Example textarea</Form.Label>
+            <Form.Control
+                  as="textarea"
+                  placeholder="Leave a comment here"
+                  style={{ height: '100px' }}
+                />
+            </Form.Group>
+            <div className="mt-4" variant="primary" type="submit">
+               <SectionBtn link="/" label="CONNECT WITH ME" />
+            </div>
           </Form>
         </Col>
       </Row>
+      </Container>
     </div>
   );
 }
