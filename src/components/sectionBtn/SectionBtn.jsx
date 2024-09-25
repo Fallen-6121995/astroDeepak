@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 function SectionBtn({label,clickHandler,link}) {
   return (
-    <div>
+    <div className='cta-btn-com'>
         <Link href={link}>
-            <button onClick={clickHandler}>{label}</button>
+            <button className="cta-btn" onClick={clickHandler}>{label}</button>
         </Link>
     </div>
   )

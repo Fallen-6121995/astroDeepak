@@ -6,13 +6,41 @@ img {
 
 :root {
   --mainGreen: #009b72;
+  --lightGreen: #007556;
   --mainWhite: #fff;
 }
 
 body {
   font-family: "Nunito";
 }
-
+.secPadding {
+  padding: 60px 0px;
+}
+.cta-btn {
+  color: #fff;
+  background-color: var(--mainGreen);
+  border-color: var(--mainGreen);
+  border-radius: 100px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 36px;
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+}
+.cta-btn:hover {
+  color: #fff;
+  background-color: #007556;
+  border-color: #007556;
+}
+.lifeCoachBtn .cta-btn {
+   margin: 0 auto;
+}
+.cta-btn-com a {
+   text-decoration: none;
+}
 /* navbar css */
 .pa_navbar .nav-link {
   color: rgba(0, 0, 0, 0.5);
@@ -170,11 +198,14 @@ mark {
 }
 
 .banner-section {
-  height: 120vh;
+  height: 100vh;
   background-image: url("/images/Saloni_singh_banner.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .headline-text {
   width: 100%;
@@ -187,11 +218,62 @@ mark {
 
 /*--end banner css--*/
 
-.life-coach-sec {
-  padding: 40px 0px;
-  text-align: center;
-}
+/*--start life coach css--*/
 
+.sectionHeadingDiv h2 {
+   position: relative;
+   display: inline-block;
+}
+.sectionHeadingDiv {
+   text-align: center;
+}
+.sectionHeadingDiv h2::before {
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: #01464b;
+  bottom: -16px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+ }
+
+ .top-coach-img img {
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+ }
+
+ /*--start about sec css--*/
+ .coachAbout {
+    background-color: #F3FDFF;
+ }
+ 
+ .aboutLeft img {
+    width: 100%;
+    max-width: 60%;
+}
+/*--services section css--*/
+.servicesCard {
+  border: 2px solid #00000026;
+  padding: 20px;
+}
+.ser_Content a {
+    color: var(--mainGreen);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+.ser_Content a:hover {
+    color: #007556;
+ }
+
+
+ /*--start footer--*/
+ .footer {
+  background-color: #F4F1F1;
+}
 /*--start Responsive--*/
 
 @media (min-width: 1200px) and (max-width: 1300px) {

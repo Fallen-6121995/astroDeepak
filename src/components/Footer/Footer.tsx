@@ -1,8 +1,14 @@
 import React from "react";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer secPadding">
       <div className="container">
         <div className="row">
           <div className="col-md-3">
@@ -37,30 +43,35 @@ function Footer() {
                 <a href="#">Coachsalonisingh@gmail.com</a>
               </p>
               <ul>
-                <li>
-                  <a href="#">
-                    <i className="fa-brands fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa-brands fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa-brands fa-linkedin"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa-brands fa-youtube"></i>
-                  </a>
-                </li>
+                <li className="list-inline-item mx-2"><FaFacebookF /></li>
+                <li className="list-inline-item mx-2"><FaInstagram /></li>
+                <li className="list-inline-item mx-2"><FaYoutube /></li>
+                <li className="list-inline-item mx-2"><FaLinkedinIn /></li>
+                <li className="list-inline-item mx-2"><FaXTwitter /></li>
               </ul>
             </div>
           </div>
-          <div className="col-md-3"></div>
+          <div className="col-md-3">
+          <ul>
+              <li>
+                <a href="#">
+                  <span>1-2-1 Coaching</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span className="elementor-icon-list-text">
+                    Download free eBook
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span className="elementor-icon-list-text">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
