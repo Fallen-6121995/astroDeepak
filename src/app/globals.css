@@ -36,10 +36,10 @@ body {
   border-color: #007556;
 }
 .lifeCoachBtn .cta-btn {
-   margin: 0 auto;
+  margin: 0 auto;
 }
 .cta-btn-com a {
-   text-decoration: none;
+  text-decoration: none;
 }
 /* navbar css */
 .pa_navbar .nav-link {
@@ -221,15 +221,15 @@ mark {
 /*--start life coach css--*/
 
 .sectionHeadingDiv h2 {
-   position: relative;
-   display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 .sectionHeadingDiv {
-   text-align: center;
+  text-align: center;
 }
-.sectionHeadingDiv h2::before {
+.underlineDiv h2::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 60px;
   height: 3px;
   background-color: #01464b;
@@ -237,22 +237,22 @@ mark {
   left: 0;
   right: 0;
   margin: 0 auto;
- }
+}
 
- .top-coach-img img {
-    width: 100%;
-    max-width: 60%;
-    margin: 0 auto;
- }
+.top-coach-img img {
+  width: 100%;
+  max-width: 60%;
+  margin: 0 auto;
+}
 
- /*--start about sec css--*/
- .coachAbout {
-    background-color: #F3FDFF;
- }
- 
- .aboutLeft img {
-    width: 100%;
-    max-width: 60%;
+/*--start about sec css--*/
+.coachAbout {
+  background-color: #f3fdff;
+}
+
+.aboutLeft img {
+  width: 100%;
+  max-width: 60%;
 }
 /*--services section css--*/
 .servicesCard {
@@ -260,27 +260,27 @@ mark {
   padding: 20px;
 }
 .ser_Content a {
-    color: var(--mainGreen);
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
+  color: var(--mainGreen);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 .ser_Content a:hover {
-    color: #007556;
- }
+  color: #007556;
+}
 
- /*--Testimonials css--*/
- .testimonialCard {
-      padding: 30px 20px;
-      border: 2px solid #00000026;
-      border-radius: 10px;
-      width: 100%;
-      max-width: 95%;
-      margin: 0 auto;
-      background-color: #fff;
-      opacity: 1;
- }
- .testimonialCard p {
+/*--Testimonials css--*/
+.testimonialCard {
+  padding: 30px 20px;
+  border: 2px solid #00000026;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  opacity: 1;
+}
+.testimonialCard p {
   font-size: 13px;
   font-weight: 300;
   overflow: hidden;
@@ -289,9 +289,9 @@ mark {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
- /*--start footer--*/
- .footer {
-  background-color: #F4F1F1;
+/*--start footer--*/
+.footer {
+  background-color: #f4f1f1;
 }
 /*--start Responsive--*/
 

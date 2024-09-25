@@ -27,7 +27,6 @@ function Contact() {
               road, Gurugram.
             </p>
           </div>
-
           <SectionHeading
             tagline="Email:"
             color="#01464B"
