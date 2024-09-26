@@ -37,7 +37,7 @@ export default function Home() {
         <Container>
           <SectionHeading
             tagline={sectionOneHeading}
-            color="#01464B"
+            color="var(--mainYellow)"
             fontSize={40}
             fontWeight={600}
           />
@@ -71,11 +71,11 @@ export default function Home() {
         </Container>
       </section>
       {/*--start life coach Services sec--*/}
-      <section className="coachServices secPadding">
+      {/* <section className="coachServices secPadding">
         <Container>
           <SectionHeading
             tagline={sectionOneHeading}
-            color="#01464B"
+            color="var(--mainYellow)"
             fontSize={40}
             fontWeight={600}
           />
@@ -95,17 +95,17 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
       {/*--start about section--*/}
       <section className="coachAbout secPadding">
-        Unlock Your Full Potential with a Top-Rated Life Coach!
+      <Container>
         <SectionHeading
           tagline={sectionOneHeading}
-          color="#01464B"
+          color="var(--mainYellow)"
           fontSize={40}
           fontWeight={600}
         />
-        <Container>
+       
           <Row className="mt-5">
             <Col md="6">
               <div className="aboutLeft text-center">
@@ -165,7 +165,7 @@ export default function Home() {
         <Container>
           <SectionHeading
             tagline={sectionOneHeading}
-            color="#01464B"
+            color="var(--mainYellow)"
             fontSize={40}
             fontWeight={600}
           />
@@ -190,7 +190,7 @@ export default function Home() {
       <section className="coachAbout secPadding">
         <SectionHeading
           tagline={sectionOneHeading}
-          color="#01464B"
+          color="var(--mainYellow)"
           fontSize={40}
           fontWeight={600}
         />
@@ -248,13 +248,51 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
+  <div className="counterSec">
+    <Container>
+      <Row className="align-items-center mt-5">
+        <Col md="3">
+            <div className="column text-center">
+              <div className="card">
+                <h3>11+</h3>
+                <p className="mb-0">Partners</p>
+              </div>
+            </div>
+         </Col>
+         <Col md="3">
+            <div className="column text-center">
+              <div className="card">
+                <h3>55+</h3>
+                <p className="mb-0">Projects</p>
+              </div>
+            </div>
+        </Col>
+         <Col md="3">
+            <div className="column text-center">
+              <div className="card">
+                <h3>100+</h3>
+                <p className="mb-0">Happy Clients</p>
+              </div>
+            </div>
+          </Col>
+          <Col md="3">
+            <div className="column text-center">
+              <div className="card">
+                <h3>100+</h3>
+                <p className="mb-0">Meetings</p>
+              </div>
+            </div>
+            </Col>
+          </Row>
+          </Container>
+          </div>
       </section>
       {/*--end About section--*/}
       {/*--start Free eBook--*/}
-      <section className="ebookAbout secPadding">
+      {/* <section className="ebookAbout secPadding">
         <SectionHeading
           tagline={sectionOneHeading}
-          color="#01464B"
+          color="var(--mainYellow)"
           fontSize={40}
           fontWeight={600}
         />
@@ -300,12 +338,14 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
+      {/*--start counter section--*/}
+    
       {/*--start Testimonials section--*/}
       <section className="testimonialsArea secPadding">
         <SectionHeading
           tagline={sectionOneHeading}
-          color="#01464B"
+          color="var(--mainYellow)"
           fontSize={40}
           fontWeight={600}
         />

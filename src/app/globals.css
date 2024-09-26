@@ -5,11 +5,13 @@ img {
 }
 
 :root {
-  --mainGreen: #e9ba1e;
-  --lightGreen: #007556;
+  --mainYellow: #F9C23E;
+  --lightYellow: #f9c23ed1;
   --mainWhite: #fff;
 }
-
+.mainYellow {
+    color: var(--mainYellow);
+}
 body {
   font-family: "Nunito";
 }
@@ -17,9 +19,9 @@ body {
   padding: 60px 0px;
 }
 .cta-btn {
-  color: #fff;
-  background-color: var(--mainGreen);
-  border-color: var(--mainGreen);
+  color: #000;
+  background-color: var(--mainYellow);
+  border-color: var(--mainYellow);
   border-radius: 5px;
   display: inline-block;
   text-decoration: none;
@@ -32,9 +34,9 @@ body {
   letter-spacing: 0.5px;
 }
 .cta-btn:hover {
-  color: #fff;
-  background-color: #007556;
-  border-color: #007556;
+  color: #000000bd;
+  background-color: var(--lightYellow);
+  border-color: var(--lightYellow);
 }
 .lifeCoachBtn .cta-btn {
   margin: 0 auto;
@@ -43,6 +45,9 @@ body {
   text-decoration: none;
 }
 /* navbar css */
+.topHeader {
+  background-color: #f8f7f3;
+}
 .pa_navbar .nav-link {
   color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
@@ -50,31 +55,43 @@ body {
   display: inline-block;
   font-weight: 700;
 }
-.pa_navbar .nav-link:hover {
-  color: var(--mainGreen);
-}
-.navBtn .btn {
-  background-color: var(--mainGreen);
-  border: 1px solid var(--mainGreen);
-  color: #fff;
-  font-size: 18px;
+
+.pa_navbar .menuItem a {
+  margin: 0px 20px;
+  color: #000;
+  text-decoration: none;
   font-weight: 500;
-  padding: 10px 21px;
-  border-radius: 100px;
+  border-bottom: 2px solid transparent;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+.pa_navbar .menuItem a:hover,
+.pa_navbar .menuItem a.active  {
+   border-color: var(--mainYellow);
+}
+
+.navBtn .btn {
+  background-color: var(--mainYellow);
+  border: 1px solid var(--mainYellow);
+  color: #000;
+  font-weight: 500;
+  padding: 12px 29px;
+  border-radius: 5px;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
 }
 .navBtn .btn:focus {
-  box-shadow: 0 0 0 0.25rem rgb(0 155 114 / 22%);
+  box-shadow: none;
 }
 .navBtn .btn:hover {
-  background-color: transparent;
-  color: var(--mainGreen);
+  color: #000000bd;
+  background-color: var(--lightYellow);
+  border-color: var(--lightYellow);
 }
 
 .pa_navbar .navbar-toggler {
   padding: 0px;
-  background-color: var(--mainGreen);
+  background-color: var(--mainYellow);
   width: 35px;
   height: 35px;
   border-radius: 50px;
@@ -174,8 +191,8 @@ mark {
 }
 .mainBtn {
   color: #fff;
-  background-color: var(--mainGreen);
-  border-color: var(--mainGreen);
+  background-color: var(--mainYellow);
+  border-color: var(--mainYellow);
   border-radius: 100px;
   display: inline-block;
   text-decoration: none;
@@ -192,7 +209,7 @@ mark {
 .mainBtn.mainBtnLight {
   background-color: transparent;
   border-color: rgba(0, 155, 114, 0.25);
-  color: var(--mainGreen);
+  color: var(--mainYellow);
 }
 .mainBtn.mainBtnLight:hover {
   background-color: rgba(0, 155, 114, 0.2);
@@ -233,7 +250,7 @@ mark {
   content: "";
   width: 60px;
   height: 3px;
-  background-color: #01464b;
+  background-color: var(--lightYellow);
   bottom: -16px;
   left: 0;
   right: 0;
@@ -248,7 +265,7 @@ mark {
 
 /*--start about sec css--*/
 .coachAbout {
-  background-color: #f3fdff;
+  background-color: #f8f7f3;
 }
 
 .aboutLeft img {
@@ -261,7 +278,7 @@ mark {
   padding: 20px;
 }
 .ser_Content a {
-  color: var(--mainGreen);
+  color: var(--mainYellow);
   text-decoration: none;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
@@ -290,10 +307,23 @@ mark {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+.counterSec .column .card {
+     height: 100px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
 /*--start footer--*/
 .footer {
-  background-color: #f4f1f1;
+  background-color: #ececec;
 }
+.footer ul li a,
+.ftrSocialLink p a  { 
+   color: #62615c;
+   text-decoration: none;
+}
+
 /*--start Responsive--*/
 
 @media (min-width: 1200px) and (max-width: 1300px) {

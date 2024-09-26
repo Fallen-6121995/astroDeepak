@@ -17,7 +17,7 @@ function Footer() {
             </div>
           </div>
           <div className="col-md-3">
-            <ul>
+            <ul className="list-inline">
               <li>
                 <a href="#">
                   <span>1-2-1 Coaching</span>
@@ -42,7 +42,7 @@ function Footer() {
               <p>
                 <a href="#">Coachsalonisingh@gmail.com</a>
               </p>
-              <ul>
+              <ul className="list-inline">
                 <li className="list-inline-item mx-2"><FaFacebookF /></li>
                 <li className="list-inline-item mx-2"><FaInstagram /></li>
                 <li className="list-inline-item mx-2"><FaYoutube /></li>
@@ -52,7 +52,7 @@ function Footer() {
             </div>
           </div>
           <div className="col-md-3">
-          <ul>
+          <ul className="list-inline">
               <li>
                 <a href="#">
                   <span>1-2-1 Coaching</span>

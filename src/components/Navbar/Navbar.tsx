@@ -27,13 +27,13 @@ function HeaderNavbar() {
                 <ul className="list-inline mb-0">
                   <li className="list-inline-item">
                     <span>
-                      <FaPhoneAlt />
+                      <FaPhoneAlt className="mainYellow" />
                     </span>{" "}
                     +123(98765645445)
                   </li>
                   <li className="list-inline-item">
                     <span>
-                      <MdOutlineEmail />
+                      <MdOutlineEmail className="mainYellow" />
                     </span>{" "}
                     test@gmail.com
                   </li>
@@ -44,19 +44,19 @@ function HeaderNavbar() {
               <div className="topHeaderSocial text-end">
                 <ul className="list-inline mx-2 mb-0">
                   <li className="list-inline-item mx-2">
-                    <FaFacebookF />
+                    <FaFacebookF className="mainYellow" />
                   </li>
                   <li className="list-inline-item mx-2">
-                    <FaInstagram />
+                    <FaInstagram className="mainYellow" />
                   </li>
                   <li className="list-inline-item mx-2">
-                    <FaYoutube />
+                    <FaYoutube className="mainYellow" />
                   </li>
                   <li className="list-inline-item mx-2">
-                    <FaLinkedinIn />
+                    <FaLinkedinIn className="mainYellow" />
                   </li>
                   <li className="list-inline-item mx-2">
-                    <FaXTwitter />
+                    <FaXTwitter className="mainYellow" />
                   </li>
                 </ul>
               </div>
@@ -65,16 +65,16 @@ function HeaderNavbar() {
         </Container>
       </div>
       <header className="pa_navbar">
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg">
           <Container>
             <Navbar.Brand href="#">
               <img src="/images/SaloniLogo.png" alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
-              <Nav className="ms-auto mb-2 mb-lg-0" navbarScroll>
+              <Nav className="mx-auto mb-2 mb-lg-0" navbarScroll>
                 {navbarData?.map((data) => (
-                  <div>
+                  <div className="menuItem">
                     <Link key={data?.id} href={data?.link}>
                       {data?.label}
                     </Link>
@@ -92,7 +92,7 @@ function HeaderNavbar() {
                 </NavDropdown> */}
               </Nav>
               <div className="navBtn d-flex ms-md-4">
-                <Button className="btn">Search</Button>
+                <Button className="cta-btn">Search</Button>
               </div>
             </Navbar.Collapse>
           </Container>
