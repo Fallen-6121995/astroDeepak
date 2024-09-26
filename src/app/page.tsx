@@ -98,6 +98,7 @@ export default function Home() {
       </section>
       {/*--start about section--*/}
       <section className="coachAbout secPadding">
+        Unlock Your Full Potential with a Top-Rated Life Coach!
         <SectionHeading
           tagline={sectionOneHeading}
           color="#01464B"

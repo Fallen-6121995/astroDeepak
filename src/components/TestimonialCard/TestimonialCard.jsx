@@ -4,10 +4,10 @@ import { Col } from 'react-bootstrap'
 function TestimonialCard({description,name}) {
   return (
     <Col md="4">
-                      <div className="testimonialCard">
-                <p>
-                 {description}
-                </p>
+        <div className="testimonialCard">
+            <p>
+                {description}
+            </p>
                 <div className="d-flex align-items-center">
                   <div className="flex-shrink-0">
                     <img

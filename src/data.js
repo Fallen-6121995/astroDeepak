@@ -10,3 +10,8 @@ export const testimonials = [
     { name: "Idelson Ndunje", description: "I LOVE IT SIMPLY THE WORK IT DOES IS SUPER CLEAN, I use it mainly for school and I highly recommend it if you need to clean the background noise of any audio, it is very fast and effective, the cost is very appropriate for me does to have the complete songs. Very effective app 👍🏻" },
     { name: "Idelson Ndunje", description: "I LOVE IT SIMPLY THE WORK IT DOES IS SUPER CLEAN, I use it mainly for school and I highly recommend it if you need to clean the background noise of any audio, it is very fast and effective, the cost is very appropriate for me does to have the complete songs. Very effective app 👍🏻" }
 ]
+
+export const navbarData = [
+    { id: 1, label: "Home", link: "/" },
+    { id: 2, label: "Contact Us", link: "/contact-us" },
+]
