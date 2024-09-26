@@ -248,7 +248,9 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-  <div className="counterSec">
+      </section>
+      {/*--end About section--*/}
+      <div className="counterSec">
     <Container>
       <Row className="align-items-center mt-5">
         <Col md="3">
@@ -286,8 +288,6 @@ export default function Home() {
           </Row>
           </Container>
           </div>
-      </section>
-      {/*--end About section--*/}
       {/*--start Free eBook--*/}
       {/* <section className="ebookAbout secPadding">
         <SectionHeading

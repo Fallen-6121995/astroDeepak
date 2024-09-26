@@ -312,6 +312,7 @@ mark {
      display: flex;
      align-items: center;
      justify-content: center;
+     background: linear-gradient(to right, #F5AF41, #F1C40F);
 }
 
 /*--start footer--*/
