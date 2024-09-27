@@ -250,8 +250,14 @@ export default function Home() {
         </Container>
       </section>
       {/*--end About section--*/}
-      <div className="counterSec">
+      <div className="counterSec secPadding">
     <Container>
+    <SectionHeading
+          tagline={sectionOneHeading}
+          color="var(--mainYellow)"
+          fontSize={40}
+          fontWeight={600}
+        />
       <Row className="align-items-center mt-5">
         <Col md="3">
             <div className="column text-center">

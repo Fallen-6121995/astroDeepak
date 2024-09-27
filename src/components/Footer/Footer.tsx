@@ -8,6 +8,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 function Footer() {
   return (
+    <div>
     <footer className="footer secPadding">
       <div className="container">
         <div className="row">
@@ -43,11 +44,11 @@ function Footer() {
                 <a href="#">Coachsalonisingh@gmail.com</a>
               </p>
               <ul className="list-inline">
-                <li className="list-inline-item mx-2"><FaFacebookF /></li>
-                <li className="list-inline-item mx-2"><FaInstagram /></li>
-                <li className="list-inline-item mx-2"><FaYoutube /></li>
-                <li className="list-inline-item mx-2"><FaLinkedinIn /></li>
-                <li className="list-inline-item mx-2"><FaXTwitter /></li>
+                <li className="list-inline-item mx-2"><FaFacebookF className="mainYellow" /></li>
+                <li className="list-inline-item mx-2"><FaInstagram className="mainYellow"  /></li>
+                <li className="list-inline-item mx-2"><FaYoutube className="mainYellow"  /></li>
+                <li className="list-inline-item mx-2"><FaLinkedinIn className="mainYellow"  /></li>
+                <li className="list-inline-item mx-2"><FaXTwitter className="mainYellow"  /></li>
               </ul>
             </div>
           </div>
@@ -75,6 +76,12 @@ function Footer() {
         </div>
       </div>
     </footer>
+    <div className="footerBottom">
+       <div className="container">
+         <p className="mb-0 py-2">© 2020, Beerbiceps Pvt Ltd.</p>
+       </div>
+    </div>
+    </div>
   );
 }
 

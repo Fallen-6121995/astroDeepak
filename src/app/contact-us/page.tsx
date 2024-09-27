@@ -10,14 +10,10 @@ function Contact() {
   return (
     <div className="contactArea secPadding">
       <Container>
-        <SectionHeading
-          tagline={contacPageHeading}
-          color="#01464B"
-          fontSize={40}
-          fontWeight={600}
-        />
+        
         <Row>
           <Col md={4}>
+            <div className="contactLeft">
             <SectionHeading
               tagline="Address:"
               color="#01464B"
@@ -40,8 +36,16 @@ function Contact() {
             />
 
             <p>Coachsalonisingh@gmail.com</p>
+            </div>
           </Col>
           <Col md={8}>
+          <div className="contactRight">
+          <SectionHeading
+              tagline={contacPageHeading}
+              color="#01464B"
+              fontSize={40}
+              fontWeight={600}
+            />
             <Form>
               <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Name</Form.Label>
@@ -84,10 +88,11 @@ function Contact() {
                   style={{ height: "100px" }}
                 />
               </Form.Group>
-              <div className="mt-4" variant="primary" type="submit">
+              <div className="contactBtn mt-4" variant="primary" type="submit">
                 <SectionBtn link="/" label="CONNECT WITH ME" />
               </div>
             </Form>
+            </div>
           </Col>
         </Row>
       </Container>
