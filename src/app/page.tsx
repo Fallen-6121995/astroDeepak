@@ -1,11 +1,17 @@
 import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
 import SectionHeading from "../components/SeactionHeading/SectionHeading";
-import { sectionOneHeading, testimonials } from "../data";
+import {
+  sectionOneHeading,
+  services,
+  servicesSectionHeading,
+  testimonials,
+} from "../data";
 import { Col, Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import SectionBtn from "../components/sectionBtn/SectionBtn";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
+import ServicesCard from "../components/ServicesCard/ServicesCard";
 
 export default function Home() {
   return (
@@ -33,7 +39,7 @@ export default function Home() {
         </Container>
       </section>
       {/*--start life coach sec--*/}
-      <section className="life-coach-sec secPadding">
+      {/* <section className="life-coach-sec secPadding">
         <Container>
           <SectionHeading
             tagline={sectionOneHeading}
@@ -69,7 +75,7 @@ export default function Home() {
             </Row>
           </div>
         </Container>
-      </section>
+      </section> */}
       {/*--start life coach Services sec--*/}
       {/* <section className="coachServices secPadding">
         <Container>
@@ -97,15 +103,37 @@ export default function Home() {
         </Container>
       </section> */}
       {/*--start about section--*/}
+      <section className="coachServices secPadding">
+        <Container>
+          <SectionHeading
+            tagline={servicesSectionHeading}
+            color="var(--mainYellow)"
+            fontSize={40}
+            fontWeight={600}
+          />
+          <Row className="mt-5">
+            {services?.map((services) => (
+              <ServicesCard
+                key={services?.id}
+                description={services?.desc}
+                serviceName={services?.heading}
+                link={services?.link}
+                buttonLabel={services?.label}
+                imgs={services?.imgs}
+              />
+            ))}
+          </Row>
+        </Container>
+      </section>
       <section className="coachAbout secPadding">
-      <Container>
-        <SectionHeading
-          tagline={sectionOneHeading}
-          color="var(--mainYellow)"
-          fontSize={40}
-          fontWeight={600}
-        />
-       
+        <Container>
+          <SectionHeading
+            tagline={sectionOneHeading}
+            color="var(--mainYellow)"
+            fontSize={40}
+            fontWeight={600}
+          />
+
           <Row className="mt-5">
             <Col md="6">
               <div className="aboutLeft text-center">
@@ -115,7 +143,7 @@ export default function Home() {
             <Col md="6">
               <div className="aboutRight">
                 <p>
-                  Over the last 15 years, I’ve coached Senior Leaders, CEOs,
+                  Over the last 15 years, I've coached Senior Leaders, CEOs,
                   Start-up Founders, Coaches and Executives like you, become
                   highly effective leaders in every area of their life.{" "}
                 </p>
@@ -161,31 +189,6 @@ export default function Home() {
         </Container>
       </section>
       {/*--start life coach Services sec--*/}
-      <section className="coachServices secPadding">
-        <Container>
-          <SectionHeading
-            tagline={sectionOneHeading}
-            color="var(--mainYellow)"
-            fontSize={40}
-            fontWeight={600}
-          />
-          <Row className="mt-5">
-            <Col lg={4}>
-              <div className="servicesCard">
-                <img src="/images/services_1.png" alt="services_1" />
-                <div className="ser_Content mt-3">
-                  <h5>Effective Leadership 1:1 Coaching </h5>
-                  <p>
-                    Want to lead with Calm and Deep Presence? Become the
-                    effective Leader you want to Be.
-                  </p>
-                  <a href="#">Click Here for leadership coaching with me</a>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
       {/*--start about section--*/}
       <section className="coachAbout secPadding">
         <SectionHeading
@@ -248,44 +251,44 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-  <div className="counterSec">
-    <Container>
-      <Row className="align-items-center mt-5">
-        <Col md="3">
-            <div className="column text-center">
-              <div className="card">
-                <h3>11+</h3>
-                <p className="mb-0">Partners</p>
-              </div>
-            </div>
-         </Col>
-         <Col md="3">
-            <div className="column text-center">
-              <div className="card">
-                <h3>55+</h3>
-                <p className="mb-0">Projects</p>
-              </div>
-            </div>
-        </Col>
-         <Col md="3">
-            <div className="column text-center">
-              <div className="card">
-                <h3>100+</h3>
-                <p className="mb-0">Happy Clients</p>
-              </div>
-            </div>
-          </Col>
-          <Col md="3">
-            <div className="column text-center">
-              <div className="card">
-                <h3>100+</h3>
-                <p className="mb-0">Meetings</p>
-              </div>
-            </div>
-            </Col>
-          </Row>
+        <div className="counterSec">
+          <Container>
+            <Row className="align-items-center mt-5">
+              <Col md="3">
+                <div className="column text-center">
+                  <div className="card">
+                    <h3>11+</h3>
+                    <p className="mb-0">Partners</p>
+                  </div>
+                </div>
+              </Col>
+              <Col md="3">
+                <div className="column text-center">
+                  <div className="card">
+                    <h3>55+</h3>
+                    <p className="mb-0">Projects</p>
+                  </div>
+                </div>
+              </Col>
+              <Col md="3">
+                <div className="column text-center">
+                  <div className="card">
+                    <h3>100+</h3>
+                    <p className="mb-0">Happy Clients</p>
+                  </div>
+                </div>
+              </Col>
+              <Col md="3">
+                <div className="column text-center">
+                  <div className="card">
+                    <h3>100+</h3>
+                    <p className="mb-0">Meetings</p>
+                  </div>
+                </div>
+              </Col>
+            </Row>
           </Container>
-          </div>
+        </div>
       </section>
       {/*--end About section--*/}
       {/*--start Free eBook--*/}
@@ -340,7 +343,7 @@ export default function Home() {
         </Container>
       </section> */}
       {/*--start counter section--*/}
-    
+
       {/*--start Testimonials section--*/}
       <section className="testimonialsArea secPadding">
         <SectionHeading

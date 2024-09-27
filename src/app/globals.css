@@ -5,12 +5,12 @@ img {
 }
 
 :root {
-  --mainYellow: #F9C23E;
+  --mainYellow: #f9c23e;
   --lightYellow: #f9c23ed1;
   --mainWhite: #fff;
 }
 .mainYellow {
-    color: var(--mainYellow);
+  color: var(--mainYellow);
 }
 body {
   font-family: "Nunito";
@@ -45,6 +45,41 @@ body {
   text-decoration: none;
 }
 /* navbar css */
+.menuItem .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.menuItem .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menuItem .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.menuItem:hover .dropdown-content {
+  display: block;
+}
+
+.menuItem .dropdown span {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0px 20px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding: 0;
+  transition: all 0.5s ease;
+}
 .topHeader {
   background-color: #f8f7f3;
 }
@@ -66,8 +101,8 @@ body {
   transition: all 0.5s ease;
 }
 .pa_navbar .menuItem a:hover,
-.pa_navbar .menuItem a.active  {
-   border-color: var(--mainYellow);
+.pa_navbar .menuItem a.active {
+  border-color: var(--mainYellow);
 }
 
 .navBtn .btn {
@@ -308,10 +343,10 @@ mark {
   -webkit-box-orient: vertical;
 }
 .counterSec .column .card {
-     height: 100px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*--start footer--*/
@@ -319,9 +354,9 @@ mark {
   background-color: #ececec;
 }
 .footer ul li a,
-.ftrSocialLink p a  { 
-   color: #62615c;
-   text-decoration: none;
+.ftrSocialLink p a {
+  color: #62615c;
+  text-decoration: none;
 }
 
 /*--start Responsive--*/
