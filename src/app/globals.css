@@ -9,6 +9,9 @@ img {
   --lightYellow: #f9c23ed1;
   --mainWhite: #fff;
 }
+.bgLightYellow {
+   background-color: #f8f7f3;
+}
 .mainYellow {
   color: var(--mainYellow);
 }
@@ -48,27 +51,25 @@ body {
 .menuItem .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  background-color: #fff;
+  padding: 10px 0px;
+  width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
-.menuItem .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.pa_navbar .menuItem .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin: 2px 0px;
+    padding: 2px 13px;
 }
-
 .menuItem .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-
 .menuItem:hover .dropdown-content {
   display: block;
 }
-
 .menuItem .dropdown span {
   cursor: pointer;
   padding: 10px;
@@ -387,6 +388,29 @@ mark {
   border-top: 1px solid #9f9f9f;
   color: #62615c;
 }
+/*--start about page css--*/
+.aboutMeImg img {
+  width: 100%;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.aboutPageSec {
+  background-color: #f8f7f3;
+}
+.lifeCardImg img {
+   width: 100%;
+   max-width: 60%;
+}
+.lifeCardImg {
+   text-align: center;
+}
+
+.lifeJourneyCard {
+  padding: 50px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
 /*--start Responsive--*/
 
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -437,6 +461,12 @@ mark {
   }
   .navBtn .btn {
     font-size: 15px;
+  }
+  .lifeCardImg img {
+    margin-bottom: 20px;
+  }
+  .lifeJourneyCard .journey-text {
+      text-align: center;
   }
 }
 /* navbar css */

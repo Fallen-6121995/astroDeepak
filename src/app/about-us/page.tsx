@@ -1,11 +1,13 @@
 import SectionHeading from "@/components/SeactionHeading/SectionHeading";
 import { aboutSectionHeading } from "@/data";
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from 'react-bootstrap'
+
 
 function AboutUs() {
   return (
     <div>
+    <section className="aboutPageSec secPadding">
       <Container>
         <SectionHeading
           tagline={aboutSectionHeading}
@@ -13,8 +15,10 @@ function AboutUs() {
           fontSize={40}
           fontWeight={600}
         />
-        <div className="about-me-section d-flex">
-          <div>
+        <div className="about-me-section">
+         <Row className="mt-5">
+           <Col md={6}>
+            <div className="aboutMeLeft">
             <p>
               Leading executive life coach of India, with an 15 years of
               experience in Life Coaching, Leadership & Self-mastery coaching
@@ -36,12 +40,20 @@ function AboutUs() {
               She believes in her clients 100% and help them thrive in every
               area of Business & life.
             </p>
-          </div>
-          <div>
-            <img src="/images/Dr-Saloni-Singh.png" alt="Dr. Saloni Singh" />
-          </div>
+       
+            </div>
+            </Col>
+            <Col md={6}>
+            <div className="aboutMeImg text-center">
+              <img src="/images/Dr-Saloni-Singh.png" alt="Dr. Saloni Singh" />
+            </div>
+           </Col> 
+          </Row>
         </div>
-        <div>
+      </Container>
+    </section>
+    <section className="whoAm_I secPadding">
+       <div className="container">
           <SectionHeading
             tagline="Who Am I?"
             color="#01464B"
@@ -77,7 +89,7 @@ function AboutUs() {
             </p>
           </div>
         </div>
-      </Container>
+    </section>
     </div>
   );
 }

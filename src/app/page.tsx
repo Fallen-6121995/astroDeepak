@@ -29,7 +29,7 @@ export default function Home() {
                   I help Leaders with Profound Professional & Spiritual Growth
                 </h1>
               </div>
-              <div className="cta-button-section">
+              <div className="cta-button-section mt-3">
                 <button className="cta-btn">
                   <span className="d-flex me-2">
                     <FaArrowRightLong />
