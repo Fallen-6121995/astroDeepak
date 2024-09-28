@@ -24,7 +24,16 @@ export const navbarData = [
             { id: 1, label: "Introduction", link: "/about-us/introduction" },
             { id: 2, label: "Life Journey", link: "/about-us/life-journey" }]
     },
-    { id: 2, label: "Contact Us", link: "/contact-us" },
+    {
+        id: 3, label: "Services", link: "", sublinks: [
+            { id: 1, label: "1 to 1 Sessions", link: "/services/one-to-one" },
+            { id: 2, label: "Couple Session", link: "/services/couple-session" },
+            { id: 3, label: "Family Session", link: "/services/family-session" },
+            { id: 4, label: "Group Session", link: "/services/group-session" },
+
+        ]
+    },
+    { id: 4, label: "Contact Us", link: "/contact-us" },
 ]
 
 export const services = [
@@ -32,3 +41,27 @@ export const services = [
     { id: 2, heading: "Effective Leadership 1:1 Coaching", desc: "Want to lead with Calm and Deep Presence? Become the effective Leader you want to Be.", link: "", label: "Click Here for leadership coaching with me", imgs: "/images/services_1.png" },
     { id: 3, heading: "Effective Leadership 1:1 Coaching", desc: "Want to lead with Calm and Deep Presence? Become the effective Leader you want to Be.", link: "", label: "Click Here for leadership coaching with me", imgs: "/images/services_1.png" },
 ]
+
+export const servicesData = {
+    "one-to-one": {
+        title: "One To One",
+        description: "Whether you want to become an inspiring leader, who leads with calm and presence. Or you desire more contentment at work and fulfilment in relationships; it all starts with the inner work and higher awareness of self.",
+        image: "/images/Saloni.png"
+    },
+    "couple-session": {
+        title: "Couple Session",
+        description: "Whether you want to become an inspiring leader, who leads with calm and presence. Or you desire more contentment at work and fulfilment in relationships; it all starts with the inner work and higher awareness of self.",
+        image: "/images/Saloni.png"
+    },
+    "family-session": {
+        title: "Family Session",
+        description: "Whether you want to become an inspiring leader, who leads with calm and presence. Or you desire more contentment at work and fulfilment in relationships; it all starts with the inner work and higher awareness of self.",
+        image: "/images/Saloni.png"
+    },
+    "group-session": {
+        title: "Group Session",
+        description: "Whether you want to become an inspiring leader, who leads with calm and presence. Or you desire more contentment at work and fulfilment in relationships; it all starts with the inner work and higher awareness of self.",
+        image: "/images/Saloni.png"
+    },
+    // Add more services as needed...
+};
