@@ -2,10 +2,13 @@ import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
 import SectionHeading from "../components/SeactionHeading/SectionHeading";
 import {
+  LifeMentor,
   sectionOneHeading,
   services,
   servicesSectionHeading,
+  successStroriesHeading,
   testimonials,
+  testimonialsHeading,
 } from "../data";
 import { Col, Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
@@ -38,8 +41,7 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      {/*--start life coach sec--*/}
-      {/* <section className="life-coach-sec secPadding">
+      <section className="life-coach-sec secPadding">
         <Container>
           <SectionHeading
             tagline={sectionOneHeading}
@@ -75,34 +77,7 @@ export default function Home() {
             </Row>
           </div>
         </Container>
-      </section> */}
-      {/*--start life coach Services sec--*/}
-      {/* <section className="coachServices secPadding">
-        <Container>
-          <SectionHeading
-            tagline={sectionOneHeading}
-            color="var(--mainYellow)"
-            fontSize={40}
-            fontWeight={600}
-          />
-          <Row className="mt-5">
-            <Col lg={4}>
-              <div className="servicesCard">
-                <img src="/images/services_1.png" alt="services_1" />
-                <div className="ser_Content mt-3">
-                  <h5>Effective Leadership 1:1 Coaching </h5>
-                  <p>
-                    Want to lead with Calm and Deep Presence? Become the
-                    effective Leader you want to Be.
-                  </p>
-                  <a href="#">Click Here for leadership coaching with me</a>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
-      {/*--start about section--*/}
+      </section>
       <section className="coachServices secPadding">
         <Container>
           <SectionHeading
@@ -128,13 +103,13 @@ export default function Home() {
       <section className="coachAbout secPadding">
         <Container>
           <SectionHeading
-            tagline={sectionOneHeading}
+            tagline={LifeMentor}
             color="var(--mainYellow)"
             fontSize={40}
             fontWeight={600}
           />
 
-          <Row className="mt-5">
+          <Row className="mt-5 align-items-center">
             <Col md="6">
               <div className="aboutLeft text-center">
                 <img src="/images/Saloni.png" alt="Saloni" />
@@ -143,42 +118,18 @@ export default function Home() {
             <Col md="6">
               <div className="aboutRight">
                 <p>
-                  Over the last 15 years, I've coached Senior Leaders, CEOs,
-                  Start-up Founders, Coaches and Executives like you, become
-                  highly effective leaders in every area of their life.{" "}
+                  A competent life coach serves as a shining light of guidance,
+                  illuminating routes towards personal growth and fulfillment.
+                  Through empathy and sagacity, they empower individuals to
+                  overcome obstacles, unearth their innate potential, and evoke
+                  profound transformations. Their influence extends far beyond
+                  coaching sessions, leaving an enduring mark on the voyage of
+                  self-discovery.
                 </p>
                 <p>
-                  Through 1:1 Life Coaching services, I have helped leaders:
-                </p>
-                <ul>
-                  <li>
-                    <span>
-                      Handle triggers, tough situations, and conflicts with
-                      Calm.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Become comfortable in their skin, by dropping self-doubts
-                      and self-judgements.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Express themselves fully and&nbsp; effectively in all
-                      situations, without any fear of judgement.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Lead effectively in life, both personally as well as
-                      professionally.
-                    </span>
-                  </li>
-                </ul>
-                <p>
-                  Are you too ready to create a Shift your Consciousness? Let’s
-                  work together.
+                  Dr. Deepaak is one of the best life coach in India. She helps
+                  people to transform their life. Connect with her for life
+                  transformation coaching.
                 </p>
                 <div className="mt-4">
                   <SectionBtn link="/" label="CONNECT WITH ME" />
@@ -189,165 +140,54 @@ export default function Home() {
         </Container>
       </section>
       {/*--start life coach Services sec--*/}
-      {/*--start about section--*/}
-      <section className="coachAbout secPadding">
-        <SectionHeading
-          tagline={sectionOneHeading}
-          color="var(--mainYellow)"
-          fontSize={40}
-          fontWeight={600}
-        />
+      <div className="counterSec secPadding">
         <Container>
-          <Row className="mt-5">
-            <Col md="6">
-              <div className="aboutLeft text-center">
-                <img src="/images/Saloni.png" alt="Saloni" />
+          <SectionHeading
+            tagline={successStroriesHeading}
+            color="var(--mainYellow)"
+            fontSize={40}
+            fontWeight={600}
+          />
+          <Row className="align-items-center mt-5">
+            <p>fiuewfiuewhfewhfiuewhfiuwhefiuhwfiuwhfiuhew</p>
+            <Col md="3">
+              <div className="column text-center">
+                <div className="card">
+                  <h3>11+</h3>
+                  <p className="mb-0">Partners</p>
+                </div>
               </div>
             </Col>
-            <Col md="6">
-              <div className="aboutRight">
-                <p>
-                  Over the last 15 years, I’ve coached Senior Leaders, CEOs,
-                  Start-up Founders, Coaches and Executives like you, become
-                  highly effective leaders in every area of their life.{" "}
-                </p>
-                <p>
-                  Through 1:1 Life Coaching services, I have helped leaders:
-                </p>
-                <ul>
-                  <li>
-                    <span>
-                      Handle triggers, tough situations, and conflicts with
-                      Calm.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Become comfortable in their skin, by dropping self-doubts
-                      and self-judgements.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Express themselves fully and&nbsp; effectively in all
-                      situations, without any fear of judgement.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Lead effectively in life, both personally as well as
-                      professionally.
-                    </span>
-                  </li>
-                </ul>
-                <p>
-                  Are you too ready to create a Shift your Consciousness? Let’s
-                  work together.
-                </p>
-                <div className="mt-4">
-                  <SectionBtn link="/" label="CONNECT WITH ME" />
+            <Col md="3">
+              <div className="column text-center">
+                <div className="card">
+                  <h3>55+</h3>
+                  <p className="mb-0">Projects</p>
+                </div>
+              </div>
+            </Col>
+            <Col md="3">
+              <div className="column text-center">
+                <div className="card">
+                  <h3>100+</h3>
+                  <p className="mb-0">Happy Clients</p>
+                </div>
+              </div>
+            </Col>
+            <Col md="3">
+              <div className="column text-center">
+                <div className="card">
+                  <h3>100+</h3>
+                  <p className="mb-0">Meetings</p>
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
-        <div className="counterSec">
-          <Container>
-            <Row className="align-items-center mt-5">
-              <Col md="3">
-                <div className="column text-center">
-                  <div className="card">
-                    <h3>11+</h3>
-                    <p className="mb-0">Partners</p>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="column text-center">
-                  <div className="card">
-                    <h3>55+</h3>
-                    <p className="mb-0">Projects</p>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="column text-center">
-                  <div className="card">
-                    <h3>100+</h3>
-                    <p className="mb-0">Happy Clients</p>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="column text-center">
-                  <div className="card">
-                    <h3>100+</h3>
-                    <p className="mb-0">Meetings</p>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </section>
-      {/*--end About section--*/}
-      {/*--start Free eBook--*/}
-      {/* <section className="ebookAbout secPadding">
-        <SectionHeading
-          tagline={sectionOneHeading}
-          color="var(--mainYellow)"
-          fontSize={40}
-          fontWeight={600}
-        />
-        <Container>
-          <Row className="mt-5">
-            <Col md="6">
-              <div className="aboutLeft text-center">
-                <img src="/images/ebook_saloni.jpg" alt="ebook_saloni" />
-              </div>
-            </Col>
-            <Col md="6">
-              <div className="aboutRight">
-                <p>
-                  {" "}
-                  Do you overthink and over-analyze things? Are stressful
-                  thoughts and anxiety a regular part of your life? Do you want
-                  to have a clear mind, enhance your decision-making ability,
-                  creativity, and productivity, so you can use your mind to your
-                  best capacity?
-                </p>
-                <p>
-                  If Yes, then by practicing the simple and practical tools
-                  given in this book, you’ll be able to cultivate a new mind,
-                  and that too by devoting just three minutes in a day.
-                </p>
-                <p>Get this gift of e-book by Saloni Now:</p>
-                <div className="ebookForm">
-                  <form>
-                    <div className="mb-3">
-                      <label className="form-label">Email address</label>
-                      <input type="email" className="form-control" />
-                    </div>
-                    <div>
-                      <label className="form-label">Email address</label>
-                      <input type="email" className="form-control" />
-                    </div>
-                    <div className="mt-4">
-                      <SectionBtn link="/" label="CONNECT WITH ME" />
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
-      {/*--start counter section--*/}
-
-      {/*--start Testimonials section--*/}
+      </div>
       <section className="testimonialsArea secPadding">
         <SectionHeading
-          tagline={sectionOneHeading}
+          tagline={testimonialsHeading}
           color="var(--mainYellow)"
           fontSize={40}
           fontWeight={600}

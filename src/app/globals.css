@@ -347,6 +347,11 @@ mark {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(to right, #f5af41, #f1c40f);
+}
+
+.counterSec .column .card h3 {
+  font-size: 30px;
 }
 
 /*--start footer--*/
@@ -359,6 +364,29 @@ mark {
   text-decoration: none;
 }
 
+.contactLeft {
+  background-color: #f8f7f3;
+  padding: 20px;
+  border-radius: 26px;
+  position: sticky;
+  top: 20px;
+  margin-top: 8px;
+}
+.contactBtn button {
+  margin: 0 auto;
+}
+
+.footerBottom p {
+  text-align: center;
+}
+.footerBottom {
+  background-color: #ececec;
+}
+.footerBottom p {
+  text-align: center;
+  border-top: 1px solid #9f9f9f;
+  color: #62615c;
+}
 /*--start Responsive--*/
 
 @media (min-width: 1200px) and (max-width: 1300px) {
