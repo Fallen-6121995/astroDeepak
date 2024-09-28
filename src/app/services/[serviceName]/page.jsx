@@ -10,25 +10,30 @@ function ServicePage() {
     const service = servicesData[serviceName];
   return (
     <div>
+      <section className='ourServicesPage secPadding bgLightYellow'>
         <Container>
-            <Row>
-                <Col>
-                <img src={service?.image} />
-                </Col>
-                <Col>
-                <SectionHeading
+        <SectionHeading
                     tagline={service?.title}
                     color="var(--mainYellow)"
                     fontSize={40}
                     fontWeight={600}
                 />
+            <Row className='mt-5'>
+                <Col md={6}>
+                    <h3>Lorem ipsum, dolor sit amet</h3>
                     <p>{service?.description}</p>
-                    <div>
+                    <div className='mt-4'>
                 <SectionBtn link="" label="CONNECT WITH ME" />
               </div>
                 </Col>
+                <Col md={6}>
+                <div className='ourServicesImg text-center'>
+                   <img src={service?.image} />
+                </div>
+                </Col>
             </Row>
         </Container>
+        </section>
     </div>
   )
 }

@@ -411,6 +411,16 @@ mark {
   margin-bottom: 50px;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
+
+/*--our Services Page--*/
+
+.ourServicesPage {
+  margin: 0px 0px 60px;
+}
+.ourServicesImg img {
+  width: 100%;
+  max-width: 70%;
+}
 /*--start Responsive--*/
 
 @media (min-width: 1200px) and (max-width: 1300px) {
