@@ -88,7 +88,7 @@ function Footer() {
       </footer>
       <div className="footerBottom">
         <div className="container">
-          <p className="mb-0 py-2">© 2020, Beerbiceps Pvt Ltd.</p>
+          <p className="mb-0 py-2">© 2020, Abc Pvt Ltd.</p>
         </div>
       </div>
     </div>
