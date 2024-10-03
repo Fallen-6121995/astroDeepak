@@ -421,6 +421,16 @@ mark {
   width: 100%;
   max-width: 70%;
 }
+
+/*--start poadcast page css--*/
+.poadCast_Banner {
+    margin-bottom: 60px;
+}
+
+.poadCastRight img {
+       width: 100%;
+       max-width: 75%;
+}
 /*--start Responsive--*/
 
 @media (min-width: 1200px) and (max-width: 1300px) {
