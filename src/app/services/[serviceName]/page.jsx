@@ -1,23 +1,21 @@
-"use client"
 import React from 'react'
-import { useParams } from 'next/navigation';
 import { Row,Col, Container } from 'react-bootstrap';
 import SectionHeading from '@/components/SeactionHeading/SectionHeading';
 import { servicesData } from '@/data';
 import SectionBtn from '@/components/sectionBtn/SectionBtn';
-function ServicePage() {
-    const { serviceName } = useParams();
+function ServicePage({ params }) {
+    const { serviceName } = params;
     const service = servicesData[serviceName];
   return (
     <div>
       <section className='ourServicesPage secPadding bgLightYellow'>
         <Container>
         <SectionHeading
-                    tagline={service?.title}
-                    color="var(--mainYellow)"
-                    fontSize={40}
-                    fontWeight={600}
-                />
+            tagline={service?.title}
+            color="var(--mainYellow)"
+            fontSize={40}
+            fontWeight={600}
+        />
             <Row className='mt-5'>
                 <Col md={6}>
                     <h3>Lorem ipsum, dolor sit amet</h3>
@@ -39,3 +37,9 @@ function ServicePage() {
 }
 
 export default ServicePage
+export async function generateStaticParams() {
+    const serviceNames = Object.keys(servicesData);
+    return serviceNames.map((serviceName) => ({
+      serviceName,
+    }));
+}

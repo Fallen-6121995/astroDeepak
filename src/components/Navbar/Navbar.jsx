@@ -93,7 +93,7 @@ function HeaderNavbar() {
                 ))}
               </Nav>
               <div className="navBtn d-flex ms-md-4">
-                <Button className="cta-btn">Search</Button>
+                <Button className="cta-btn">Book an Appointment</Button>
               </div>
             </Navbar.Collapse>
           </Container>
