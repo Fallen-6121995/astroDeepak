@@ -431,6 +431,22 @@ mark {
        width: 100%;
        max-width: 75%;
 }
+.poadCastLeft h1 span{
+    color: var(--lightYellow);
+    font-weight: bold;
+}
+.poadCastLeft h1 {
+  font-size: 50px;
+  font-weight: normal;
+}
+.poadCastLeft h2 {
+    font-size: 50px;
+    color: var(--lightYellow);
+    font-weight: bold;
+}
+.youAreTxt p {
+  font-size: 22px;
+}
 /*--start Responsive--*/
 
 @media (min-width: 1200px) and (max-width: 1300px) {
