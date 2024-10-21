@@ -26,7 +26,7 @@ export default function Home() {
             <Col lg={6}>
               <div className="headline-text">
                 <h1>
-                  I help Leaders with Profound Professional & Spiritual Growth
+                Leading You to a Life of Purpose and Peace
                 </h1>
               </div>
               <div className="cta-button-section mt-3">
@@ -52,19 +52,10 @@ export default function Home() {
           <div className="life-coach-data">
             <Row className="align-items-center mt-5">
               <Col lg={6}>
-                <p>We are here to evolve. To become our Highest Self.</p>
+                <p>Life is full of ups and downs, and at times, it can feel overwhelming to find direction or clarity. That's where the right guidance can make all the difference.</p>
                 <p>
-                  Whether you want to become an inspiring leader, who leads with
-                  calm and presence. Or you desire more contentment at work and
-                  fulfilment in relationships; it all starts with the inner work
-                  and higher awareness of self.
+                Dr. Deepak, a life coach with years of experience can help you tap into your inner strength and face challenges head-on. With his compassionate support, you can break free from negative patterns, develop habits that empower you, and move toward the life you truly deserve. We're here to bring a lasting change and help you discover a clearer, more confident path forward. 
                 </p>
-                <p>
-                  When you focus on becoming your 'Best Version', you start to
-                  excel in every area of your life. You connect with inner
-                  wisdom and have higher clarity in life.
-                </p>
-                <p>That's where I support you as your life coach.</p>
               </Col>
               <Col lg={6}>
                 <div className="top-coach-img text-center">
@@ -72,7 +63,7 @@ export default function Home() {
                 </div>
               </Col>
               <div className="lifeCoachBtn text-center">
-                <SectionBtn link="/" label="CONNECT WITH ME" />
+                <SectionBtn link="/" label="Book Your Consultation" />
               </div>
             </Row>
           </div>
@@ -118,21 +109,13 @@ export default function Home() {
             <Col md="6">
               <div className="aboutRight">
                 <p>
-                  A competent life coach serves as a shining light of guidance,
-                  illuminating routes towards personal growth and fulfillment.
-                  Through empathy and sagacity, they empower individuals to
-                  overcome obstacles, unearth their innate potential, and evoke
-                  profound transformations. Their influence extends far beyond
-                  coaching sessions, leaving an enduring mark on the voyage of
-                  self-discovery.
+                With over 15 years of experience, Dr. Deepak has helped hundreds of people transform both their personal and professional lives. As a life coach, his caring approach creates a safe and supportive space where you can explore your true desires, overcome challenges, and take confident steps towards your goals. He is dedicated to helping you identify what's been holding you back and providing the tools and strategies you need for lasting, meaningful change. 
                 </p>
                 <p>
-                  Dr. Deepaak is one of the best life coach in India. She helps
-                  people to transform their life. Connect with her for life
-                  transformation coaching.
+                Whether you want to improve your relationships, grow in your career, or simply find balance in life, Dr. Deepak's holistic method ensures your unique needs are taken care of every step of the way.
                 </p>
                 <div className="mt-4">
-                  <SectionBtn link="/" label="CONNECT WITH ME" />
+                  <SectionBtn link="/" label="See More About My Journey" />
                 </div>
               </div>
             </Col>
@@ -149,20 +132,11 @@ export default function Home() {
             fontWeight={600}
           />
           <Row className="align-items-center mt-5">
-            <p>fiuewfiuewhfewhfiuewhfiuwhefiuhwfiuwhfiuhew</p>
             <Col md="3">
               <div className="column text-center">
                 <div className="card">
-                  <h3>11+</h3>
-                  <p className="mb-0">Partners</p>
-                </div>
-              </div>
-            </Col>
-            <Col md="3">
-              <div className="column text-center">
-                <div className="card">
-                  <h3>55+</h3>
-                  <p className="mb-0">Projects</p>
+                  <h3>500+</h3>
+                  <p className="mb-0">Satisfied Clients</p>
                 </div>
               </div>
             </Col>
@@ -170,15 +144,23 @@ export default function Home() {
               <div className="column text-center">
                 <div className="card">
                   <h3>100+</h3>
-                  <p className="mb-0">Happy Clients</p>
+                  <p className="mb-0">Corporate Workshops</p>
                 </div>
               </div>
             </Col>
             <Col md="3">
               <div className="column text-center">
                 <div className="card">
-                  <h3>100+</h3>
-                  <p className="mb-0">Meetings</p>
+                  <h3>97%</h3>
+                  <p className="mb-0">Client Satisfaction Rate</p>
+                </div>
+              </div>
+            </Col>
+            <Col md="3">
+              <div className="column text-center">
+                <div className="card">
+                  <h3>150+</h3>
+                  <p className="mb-0">Strengthened Couples</p>
                 </div>
               </div>
             </Col>
