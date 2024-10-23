@@ -12,9 +12,9 @@ export const testimonialsHeading = "Testimonials";
 export const AboutLifeCoachHeading = "About Life Coach Dr Deepaak";
 export const whoAmIHeading = "Who Am I?";
 export const testimonials = [
-    { name: "Idelson Ndunje", description: "I LOVE IT SIMPLY THE WORK IT DOES IS SUPER CLEAN, I use it mainly for school and I highly recommend it if you need to clean the background noise of any audio, it is very fast and effective, the cost is very appropriate for me does to have the complete songs. Very effective app 👍🏻" },
-    { name: "Idelson Ndunje", description: "I LOVE IT SIMPLY THE WORK IT DOES IS SUPER CLEAN, I use it mainly for school and I highly recommend it if you need to clean the background noise of any audio, it is very fast and effective, the cost is very appropriate for me does to have the complete songs. Very effective app 👍🏻" },
-    { name: "Idelson Ndunje", description: "I LOVE IT SIMPLY THE WORK IT DOES IS SUPER CLEAN, I use it mainly for school and I highly recommend it if you need to clean the background noise of any audio, it is very fast and effective, the cost is very appropriate for me does to have the complete songs. Very effective app 👍🏻" }
+    { name: "Anita S.", description: "Dr. Deepak helped me rediscover my purpose and overcome the self-doubt that was holding me back. His compassionate and insightful coaching has truly transformed my life! Today, I'm more confident, focused, and happier than I ever thought possible." },
+    { name: "Ravi and Neha P.", description: "Couples counseling with Dr. Deepak saved our marriage. We were on the verge of separation, but thanks to his guidance, we learned to communicate better, understand each other more deeply, and are now closer than ever. We can't thank him enough for helping us rebuild our relationship." },
+    { name: "Manoj R.", description: "Dr. Deepak's corporate coaching transformed the way I lead my team. Our productivity and morale have never been higher, and I've become a more effective and empathetic leader. His strategies have changed the dynamics within my organization and helped us achieve remarkable success." }
 ]
 
 export const navbarData = [

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
 import SectionHeading from "../components/SeactionHeading/SectionHeading";
@@ -15,8 +16,32 @@ import { Container } from "react-bootstrap";
 import SectionBtn from "../components/sectionBtn/SectionBtn";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import ServicesCard from "../components/ServicesCard/ServicesCard";
+import Slider from 'react-slick';
 
 export default function Home() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024, // For tablets and below
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // For mobile devices
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <div>
       <section className="banner-section">
@@ -77,7 +102,8 @@ export default function Home() {
             fontSize={40}
             fontWeight={600}
           />
-          <Row className="mt-5">
+          
+          <Slider {...settings} className="mt-5">
             {services?.map((services) => (
               <ServicesCard
                 key={services?.id}
@@ -88,7 +114,7 @@ export default function Home() {
                 imgs={services?.imgs}
               />
             ))}
-          </Row>
+            </Slider>
         </Container>
       </section>
       <section className="coachAbout secPadding">
