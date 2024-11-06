@@ -19,25 +19,11 @@ function Introduction() {
            <Col md={6}>
             <div className="aboutMeLeft">
             <p>
-              Leading executive life coach of India, with an 15 years of
-              experience in Life Coaching, Leadership & Self-mastery coaching
-              and Group Facilitation.
+            With over 15 years of experience, Dr. Deepak has helped hundreds of people transform both their personal and professional lives. As a life coach, his caring approach creates a safe and supportive space where you can explore your true desires, overcome challenges, and take confident steps towards your goals. He is dedicated to helping you identify what's been holding you back and providing the tools and strategies you need for lasting, meaningful change.
             </p>
 
             <p>
-              She's worked as a Senior Gynaecologist in London, before pursuing
-              her calling to become a Executive Life coach for Leaders and CEOs.
-            </p>
-
-            <p>
-              She's passionate about helping people see the greatness within and
-              tap into their highest potential via a shift in their
-              consciousness.
-            </p>
-
-            <p>
-              She believes in her clients 100% and help them thrive in every
-              area of Business & life.
+            Whether you want to improve your relationships, grow in your career, or simply find balance in life, Dr. Deepak's holistic method ensures your unique needs are taken care of every step of the way.
             </p>
        
             </div>

@@ -35,7 +35,7 @@ function HeaderNavbar() {
                     <span>
                       <MdOutlineEmail className="mainYellow" />
                     </span>{" "}
-                    test@gmail.com
+                    sortingzindagi@gmail.com
                   </li>
                 </ul>
               </div>
@@ -43,21 +43,26 @@ function HeaderNavbar() {
             <Col md={6}>
               <div className="topHeaderSocial text-end">
                 <ul className="list-inline mx-2 mb-0">
+                  <a href="https://www.facebook.com/sortingzindagi" target="_blank">
                   <li className="list-inline-item mx-2">
                     <FaFacebookF className="mainYellow" />
                   </li>
+                  </a>
+                  <a href="https://www.instagram.com/_sortingzindagi/" target="_blank">
                   <li className="list-inline-item mx-2">
                     <FaInstagram className="mainYellow" />
                   </li>
+                  </a>
+                  <a href="https://www.youtube.com/@SortingZindagi" target="_blank">
                   <li className="list-inline-item mx-2">
                     <FaYoutube className="mainYellow" />
                   </li>
-                  <li className="list-inline-item mx-2">
-                    <FaLinkedinIn className="mainYellow" />
-                  </li>
+                  </a>
+                  <a href="https://x.com/SortingZindagi" target="_blank">
                   <li className="list-inline-item mx-2">
                     <FaXTwitter className="mainYellow" />
                   </li>
+                  </a>
                 </ul>
               </div>
             </Col>

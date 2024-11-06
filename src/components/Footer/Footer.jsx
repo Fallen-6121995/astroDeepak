@@ -41,7 +41,7 @@ function Footer() {
             <div className="col-md-3">
               <div className="ftrSocialLink">
                 <p>
-                  <a href="#">Coachsalonisingh@gmail.com</a>
+                  <a href="#">sortingzindagi@gmail.com</a>
                 </p>
                 <ul className="list-inline">
                   <li className="list-inline-item mx-2">

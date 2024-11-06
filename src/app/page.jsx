@@ -51,7 +51,7 @@ export default function Home() {
             <Col lg={6}>
               <div className="headline-text">
                 <h1>
-                Leading You to a Life of Purpose and Peace
+                Sort Your Mind, Soul, Life
                 </h1>
               </div>
               <div className="cta-button-section mt-3">
@@ -84,7 +84,7 @@ export default function Home() {
               </Col>
               <Col lg={6}>
                 <div className="top-coach-img text-center">
-                  <img src="/images/Dr-Saloni-Singh.png" alt="saloni-Singh" />
+                  <img src="/images/top-coach.png" alt="saloni-Singh" />
                 </div>
               </Col>
               <div className="lifeCoachBtn text-center">
@@ -129,7 +129,7 @@ export default function Home() {
           <Row className="mt-5 align-items-center">
             <Col md="6">
               <div className="aboutLeft text-center">
-                <img src="/images/Saloni.png" alt="Saloni" />
+                <img src="/images/dr-deepak.jpeg" alt="Saloni" />
               </div>
             </Col>
             <Col md="6">

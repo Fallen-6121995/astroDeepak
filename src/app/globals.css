@@ -252,8 +252,8 @@ mark {
 }
 
 .banner-section {
-  height: 100vh;
-  background-image: url("/images/Saloni_singh_banner.png");
+  height: 90vh;
+  background-image: url("/images/Cover-Image.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -328,15 +328,19 @@ mark {
   padding: 30px 20px;
   border: 2px solid #00000026;
   border-radius: 10px;
-  width: 100%;
-  max-width: 95%;
-  margin: 0 auto;
   background-color: #fff;
   opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Ensures the card takes the full height in the flex container */
+  height: 100%;
 }
 .testimonialCard p {
   font-size: 13px;
   font-weight: 300;
+  flex-grow: 1; /* Allows the paragraph to take extra space if available */
+  /* Uncommented overflow styling if needed for content limitation */
   /* overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
