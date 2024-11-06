@@ -127,12 +127,12 @@ export default function Home() {
           />
 
           <Row className="mt-5 align-items-center">
-            <Col md="6">
+            <Col lg="6">
               <div className="aboutLeft text-center">
                 <img src="/images/dr-deepak.jpeg" alt="Saloni" />
               </div>
             </Col>
-            <Col md="6">
+            <Col lg="6">
               <div className="aboutRight">
                 <p>
                 With over 15 years of experience, Dr. Deepak has helped hundreds of people transform both their personal and professional lives. As a life coach, his caring approach creates a safe and supportive space where you can explore your true desires, overcome challenges, and take confident steps towards your goals. He is dedicated to helping you identify what's been holding you back and providing the tools and strategies you need for lasting, meaningful change. 

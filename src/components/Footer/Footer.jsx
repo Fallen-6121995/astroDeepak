@@ -12,12 +12,12 @@ function Footer() {
       <footer className="footer secPadding">
         <div className="container">
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-md-6 col-lg-3">
               <div className="ftrLogo">
                 <img src="/images/SaloniLogo.png" alt="logo" />
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6 col-lg-3">
               <ul className="list-inline">
                 <li>
                   <a href="#">
@@ -38,7 +38,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6 col-lg-3">
               <div className="ftrSocialLink">
                 <p>
                   <a href="#">sortingzindagi@gmail.com</a>
@@ -62,7 +62,7 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6 col-lg-3">
               <ul className="list-inline">
                 <li>
                   <a href="#">

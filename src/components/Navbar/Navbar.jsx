@@ -2,13 +2,8 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -16,6 +11,7 @@ import { Col, Row } from "react-bootstrap";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { navbarData } from "@/data";
 import Link from "next/link";
+
 function HeaderNavbar() {
   return (
     <>
@@ -43,25 +39,25 @@ function HeaderNavbar() {
             <Col md={6}>
               <div className="topHeaderSocial text-end">
                 <ul className="list-inline mx-2 mb-0">
-                  <a href="https://www.facebook.com/sortingzindagi" target="_blank">
-                  <li className="list-inline-item mx-2">
-                    <FaFacebookF className="mainYellow" />
-                  </li>
+                  <a href="https://www.facebook.com/sortingzindagi" target="_blank" rel="noopener noreferrer">
+                    <li className="list-inline-item mx-2">
+                      <FaFacebookF className="mainYellow" />
+                    </li>
                   </a>
-                  <a href="https://www.instagram.com/_sortingzindagi/" target="_blank">
-                  <li className="list-inline-item mx-2">
-                    <FaInstagram className="mainYellow" />
-                  </li>
+                  <a href="https://www.instagram.com/_sortingzindagi/" target="_blank" rel="noopener noreferrer">
+                    <li className="list-inline-item mx-2">
+                      <FaInstagram className="mainYellow" />
+                    </li>
                   </a>
-                  <a href="https://www.youtube.com/@SortingZindagi" target="_blank">
-                  <li className="list-inline-item mx-2">
-                    <FaYoutube className="mainYellow" />
-                  </li>
+                  <a href="https://www.youtube.com/@SortingZindagi" target="_blank" rel="noopener noreferrer">
+                    <li className="list-inline-item mx-2">
+                      <FaYoutube className="mainYellow" />
+                    </li>
                   </a>
-                  <a href="https://x.com/SortingZindagi" target="_blank">
-                  <li className="list-inline-item mx-2">
-                    <FaXTwitter className="mainYellow" />
-                  </li>
+                  <a href="https://x.com/SortingZindagi" target="_blank" rel="noopener noreferrer">
+                    <li className="list-inline-item mx-2">
+                      <FaXTwitter className="mainYellow" />
+                    </li>
                   </a>
                 </ul>
               </div>
@@ -81,18 +77,17 @@ function HeaderNavbar() {
                 {navbarData?.map((data) => (
                   <div className="menuItem" key={data?.id}>
                     {data?.sublinks ? (
-                      <div className="dropdown">
-                        <span>{data?.label}</span>
-                        <div className="dropdown-content">
-                          {data?.sublinks.map((sublink) => (
-                            <Link key={sublink.id} href={sublink.link}>
-                              {sublink.label}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
+                      <NavDropdown title={data?.label} id={`dropdown-${data?.id}`}>
+                        {data?.sublinks.map((sublink) => (
+                          <NavDropdown.Item key={sublink.id} as={Link} href={sublink.link}>
+                            {sublink.label}
+                          </NavDropdown.Item>
+                        ))}
+                      </NavDropdown>
                     ) : (
-                      <Link href={data?.link}>{data?.label}</Link>
+                      <Nav.Link as={Link} href={data?.link}>
+                        {data?.label}
+                      </Nav.Link>
                     )}
                   </div>
                 ))}
