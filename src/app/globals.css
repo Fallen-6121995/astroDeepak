@@ -458,6 +458,7 @@ mark {
 .lifeCardImg img {
    width: 100%;
    max-width: 60%;
+   border-radius: 5px;
 }
 .lifeCardImg {
    text-align: center;
@@ -593,7 +594,8 @@ mark {
   max-width: 100%;
   margin-bottom: 20px;
 }
-.aboutMeImg img {
+.aboutMeImg img,
+.lifeCardImg img {
   max-width: 100%;
 }
 .cta-btn {
