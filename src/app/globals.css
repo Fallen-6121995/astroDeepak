@@ -102,6 +102,7 @@ body {
 
 .pa_navbar .menuItem a {
   padding: 0px 20px;
+  margin: 0px 5px;
   color: #000;
   text-decoration: none;
   font-weight: 500;
@@ -447,8 +448,9 @@ mark {
 /*--start about page css--*/
 .aboutMeImg img {
   width: 100%;
-  max-width: 60%;
+  max-width: 80%;
   margin: 0 auto;
+  border-radius: 5px;
 }
 .aboutPageSec {
   background-color: #f8f7f3;
@@ -590,6 +592,9 @@ mark {
 .aboutLeft img {
   max-width: 100%;
   margin-bottom: 20px;
+}
+.aboutMeImg img {
+  max-width: 100%;
 }
 .cta-btn {
   margin: 0 auto;
