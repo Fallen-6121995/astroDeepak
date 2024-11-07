@@ -30,7 +30,7 @@ function Introduction() {
             </Col>
             <Col md={6}>
             <div className="aboutMeImg text-center">
-              <img src="/images/Saloni.png" alt="Dr. Saloni Singh" />
+              <img src="/images/dr-deepak.jpeg" alt="Dr. Deepak" />
             </div>
            </Col> 
           </Row>

@@ -24,7 +24,7 @@ function Lifejourney() {
             </Col>
             <Col md={6} className='order-1 order-md-2'>
             <div className='lifeCardImg'>
-               <img src='/images/Saloni.png' alt='saloni' />
+               <img src='/images/dr-deepak.jpeg' alt='deepak' />
             </div>
             </Col>
         </Row>
