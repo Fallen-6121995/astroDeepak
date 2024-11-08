@@ -326,6 +326,7 @@ mark {
   border: 2px solid #00000026;
   padding: 20px;
 }
+
 .ser_Content a {
   color: var(--mainYellow);
   text-decoration: none;
@@ -376,6 +377,7 @@ mark {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
   background-color: #fff; /* Background color for card */
   margin: 10px;
+  border-radius: 5px;
 }
 
 .ser_Content {
@@ -405,9 +407,17 @@ mark {
 
 .servicesCard img {
   width: 100%;
-  height: auto; /* Ensures image responsiveness */
+  height: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
 }
-
+.ourServicesImg {
+  position: sticky;
+  top: 10px;
+  border-radius: 5px;
+}
 .counterSec .column .card h3 {
   font-size: 30px;
 }
@@ -479,6 +489,7 @@ mark {
 .ourServicesImg img {
   width: 100%;
   max-width: 70%;
+  border-radius: 5px;
 }
 
 /*--start poadcast page css--*/
