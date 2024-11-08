@@ -47,7 +47,7 @@ export default async function ServicePage({ params }) {
                 </Col>
                 <Col md={6}>
                 <div className='ourServicesImg text-center'>
-                   <img src={service?.image} />
+                   <img src={service?.img} />
                 </div>
                 </Col>
             </Row>
