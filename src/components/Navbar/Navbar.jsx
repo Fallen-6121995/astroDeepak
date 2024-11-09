@@ -25,7 +25,7 @@ function HeaderNavbar() {
                     <span>
                       <FaPhoneAlt className="mainYellow" />
                     </span>{" "}
-                    +123(98765645445)
+                    +91 8126672667
                   </li>
                   <li className="list-inline-item">
                     <span>

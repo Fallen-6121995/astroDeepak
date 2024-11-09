@@ -61,8 +61,9 @@ function Contact() {
               />
               <div>
                 <p>
-                  Clarity Hive, A - 304, Pioneer Urban Square, Golf course ext.
-                  road, Gurugram.
+                Connaught Place, sco 1022, 
+                Sector 111, Sahibzada Ajit Singh Nagar, 
+                Punjab 140307
                 </p>
               </div>
               <SectionHeading
@@ -73,7 +74,17 @@ function Contact() {
                 showUnderline={false}
               />
 
-              <p>Coachsalonisingh@gmail.com</p>
+              <p>sortingzindagi@gmail.com</p>
+
+              <SectionHeading
+                tagline="Phone:"
+                color="#01464B"
+                fontSize={22}
+                fontWeight={600}
+                showUnderline={false}
+              />
+
+              <p>+91 8126672667</p>
             </div>
           </Col>
           <Col md={8}>

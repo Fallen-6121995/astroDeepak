@@ -8,7 +8,6 @@ import SectionBtn from '@/components/sectionBtn/SectionBtn';
 
 async function getServiceData(serviceName) {
   try {
-    console.log("service>><<><><<>>",serviceName)
       const docRef = doc(db, "services", serviceName);
       const docSnap = await getDoc(docRef);
 
@@ -26,7 +25,6 @@ async function getServiceData(serviceName) {
 export default async function ServicePage({ params }) {
     const { serviceName } = params;
     const service = await getServiceData(serviceName);
-    console.log("services>>><<",service)
     // const service = servicesData[serviceName];
   return (
     <div>
