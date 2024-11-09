@@ -31,7 +31,7 @@ function HeaderNavbar() {
                     <span>
                       <MdOutlineEmail className="mainYellow" />
                     </span>{" "}
-                    sortingzindagi@gmail.com
+                  <a className="mailtoLink" href="mailto:sortingzindagi@gmail.com">sortingzindagi@gmail.com</a>
                   </li>
                 </ul>
               </div>
@@ -93,7 +93,9 @@ function HeaderNavbar() {
                 ))}
               </Nav>
               <div className="navBtn d-flex ms-md-4">
+                <Link href="/contact-us">
                 <Button className="cta-btn">Book an Appointment</Button>
+                </Link>
               </div>
             </Navbar.Collapse>
           </Container>

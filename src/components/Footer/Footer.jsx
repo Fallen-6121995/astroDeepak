@@ -5,6 +5,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -20,9 +21,9 @@ function Footer() {
             <div className="col-md-6 col-lg-3">
               <ul className="list-inline">
                 <li>
-                  <a href="#">
+                  <Link href="/services/life-transforming-advice">
                     <span>1-2-1 Coaching</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#">
@@ -41,33 +42,38 @@ function Footer() {
             <div className="col-md-6 col-lg-3">
               <div className="ftrSocialLink">
                 <p>
-                  <a href="#">sortingzindagi@gmail.com</a>
+                  <a href="mailto:sortingzindagi@gmail.com">sortingzindagi@gmail.com</a>
                 </p>
                 <ul className="list-inline">
+                <a href="https://www.facebook.com/sortingzindagi" target="_blank" rel="noopener noreferrer">
                   <li className="list-inline-item mx-2">
                     <FaFacebookF className="mainYellow" />
                   </li>
+                  </a>
+                  <a href="https://www.instagram.com/_sortingzindagi/" target="_blank" rel="noopener noreferrer">
                   <li className="list-inline-item mx-2">
                     <FaInstagram className="mainYellow" />
                   </li>
+                  </a>
+                  <a href="https://www.youtube.com/@SortingZindagi" target="_blank" rel="noopener noreferrer">
                   <li className="list-inline-item mx-2">
                     <FaYoutube className="mainYellow" />
                   </li>
-                  <li className="list-inline-item mx-2">
-                    <FaLinkedinIn className="mainYellow" />
-                  </li>
+                  </a>
+                  <a href="https://x.com/SortingZindagi" target="_blank" rel="noopener noreferrer">
                   <li className="list-inline-item mx-2">
                     <FaXTwitter className="mainYellow" />
                   </li>
+                  </a>
                 </ul>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
               <ul className="list-inline">
                 <li>
-                  <a href="#">
+                  <Link href="/services/life-transforming-advice">
                     <span>1-2-1 Coaching</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#">
@@ -77,9 +83,9 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link href="/contact-us">
                     <span className="elementor-icon-list-text">Contact</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

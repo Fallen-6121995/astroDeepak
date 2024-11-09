@@ -50,6 +50,10 @@ body {
 .cta-btn-com a {
   text-decoration: none;
 }
+.mailtoLink{
+  color: #000000bd;
+  text-decoration: none;
+}
 /* navbar css */
 
 .menuItem .dropdown-content {
