@@ -24,6 +24,9 @@ body {
 .secPadding {
   padding: 60px 0px;
 }
+.navBtn a{
+  text-decoration: none;
+}
 .cta-btn {
   color: #000;
   background-color: var(--mainYellow);
