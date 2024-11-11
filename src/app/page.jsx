@@ -141,7 +141,7 @@ export default function Home() {
                 Whether you want to improve your relationships, grow in your career, or simply find balance in life, Dr. Deepak's holistic method ensures your unique needs are taken care of every step of the way.
                 </p>
                 <div className="mt-4">
-                  <SectionBtn link="/" label="See More About My Journey" />
+                  <SectionBtn link="/about-us/introduction" label="See More About My Journey" />
                 </div>
               </div>
             </Col>
