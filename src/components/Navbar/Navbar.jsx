@@ -68,7 +68,7 @@ function HeaderNavbar() {
       <header className="pa_navbar">
         <Navbar expand="lg">
           <Container>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="/">
               <img className="logo-img" src="/images/logo.svg" alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />

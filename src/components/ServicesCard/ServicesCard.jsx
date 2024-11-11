@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 function ServicesCard({ serviceName, description, link, buttonLabel, imgs }) {
@@ -6,7 +7,9 @@ function ServicesCard({ serviceName, description, link, buttonLabel, imgs }) {
       <div className="servicesCard d-flex flex-column">
         <img src={imgs} alt={serviceName} />
         <div className="ser_Content mt-3">
+          <Link href={link}>
           <h5>{serviceName}</h5>
+          </Link>
           <p>{description}</p>
           {/* Uncomment the link if needed */}
           {/* <Link href={link}>

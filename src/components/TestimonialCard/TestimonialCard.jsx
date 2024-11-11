@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
+import { FaUser } from "react-icons/fa";
 
 function TestimonialCard({description,name}) {
   return (
@@ -9,14 +10,10 @@ function TestimonialCard({description,name}) {
                 {description}
             </p>
                 <div className="d-flex align-items-center">
-                  <div className="flex-shrink-0">
-                    <img
-                      height="44"
-                      width="44"
-                      className="mr-2"
-                      src="/images/ebook_saloni.jpg"
-                      alt="saloni"
-                    />
+                  <div className="flex-shrink-0" style={{
+                    backgroundColor:"#e8e8e8",paddingTop:5,paddingBottom:10,paddingLeft:10,paddingRight:10,borderRadius:50
+                    }}>
+                  <FaUser />
                   </div>
                   <div className="flex-grow-1 ms-3">
                     <h5 className="mb-0">{name}</h5>

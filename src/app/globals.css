@@ -577,6 +577,11 @@ mark {
   gap: 8px;
   justify-content: center;
 }
+.user-icn{
+  background-color: #9f9f9f;
+  width: 60px;
+  height: 60px;
+}
 .pa_navbar .navbar-nav-scroll {
   gap: 20px;
 }
