@@ -8,14 +8,15 @@ import { FaPhoneAlt } from "react-icons/fa";
 import Link from "next/link";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <div>
       <footer className="footer secPadding">
         <div className="container">
-          <div className="row">
+          <div className="row d-flex align-items-center">
             <div className="col-md-6 col-lg-3">
               <div className="ftrLogo">
-                <img src="/images/SaloniLogo.png" alt="logo" />
+                <img className="footer-logo" src="/images/logo.svg" alt="logo" />
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -94,7 +95,7 @@ function Footer() {
       </footer>
       <div className="footerBottom">
         <div className="container">
-          <p className="mb-0 py-2">© 2020, Abc Pvt Ltd.</p>
+          <p className="mb-0 py-2">© {currentYear} sortingzindagi</p>
         </div>
       </div>
     </div>

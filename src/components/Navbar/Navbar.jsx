@@ -69,7 +69,7 @@ function HeaderNavbar() {
         <Navbar expand="lg">
           <Container>
             <Navbar.Brand href="#">
-              <img src="/images/SaloniLogo.png" alt="logo" />
+              <img className="logo-img" src="/images/logo.svg" alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">

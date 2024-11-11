@@ -6,6 +6,13 @@ import 'slick-carousel/slick/slick-theme.css';
 import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 
+export const metadata = {
+  title: "Sorting Zindagi",
+  description: "Sorting Zindagi by Dr Deepak",
+  icons: {
+    icon: "/images/logo.svg",
+  },
+};
 
 export default function RootLayout({
   children,
