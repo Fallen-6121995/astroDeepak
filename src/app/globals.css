@@ -118,6 +118,7 @@ body {
 }
 .pa_navbar .menuItem .dropdown-item {
     padding: 4px 20px;
+    margin: 0px 0px;
     font-size: 14px;
 }
 .pa_navbar .menuItem a:hover,
