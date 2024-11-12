@@ -54,7 +54,7 @@ function Contact() {
             <div className="contactLeft">
               <SectionHeading
                 tagline="Address:"
-                color="#01464B"
+                color="var(--mainYellow)"
                 fontSize={22}
                 fontWeight={600}
                 showUnderline={false}
@@ -68,7 +68,7 @@ function Contact() {
               </div>
               <SectionHeading
                 tagline="Email:"
-                color="#01464B"
+                color="var(--mainYellow)"
                 fontSize={22}
                 fontWeight={600}
                 showUnderline={false}
@@ -78,7 +78,7 @@ function Contact() {
 
               <SectionHeading
                 tagline="Phone:"
-                color="#01464B"
+                color="var(--mainYellow)"
                 fontSize={22}
                 fontWeight={600}
                 showUnderline={false}
@@ -91,7 +91,7 @@ function Contact() {
             <div className="contactRight">
               <SectionHeading
                 tagline={contacPageHeading}
-                color="#01464B"
+                color="var(--mainYellow)"
                 fontSize={40}
                 fontWeight={600}
               />
@@ -141,7 +141,7 @@ function Contact() {
                   </Col>
                 </Row>
                 <Form.Group className="mb-3">
-                  <Form.Label htmlfor="exampleFormControlTextarea1">
+                  <Form.Label htmlFor="exampleFormControlTextarea1">
                     Comment
                   </Form.Label>
                   <Form.Control

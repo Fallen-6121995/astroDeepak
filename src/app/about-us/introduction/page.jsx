@@ -10,7 +10,7 @@ function Introduction() {
       <Container>
         <SectionHeading
             tagline={AboutLifeCoachHeading}
-          color="#01464B"
+          color="var(--mainYellow)"
           fontSize={40}
           fontWeight={600}
         />
@@ -41,7 +41,7 @@ function Introduction() {
        <div className="container">
           <SectionHeading
             tagline="Who Am I?"
-            color="#01464B"
+            color="var(--mainYellow)"
             fontSize={40}
             fontWeight={600}
           />

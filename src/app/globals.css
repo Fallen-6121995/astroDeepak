@@ -5,8 +5,8 @@ img {
 }
 
 :root {
-  --mainYellow: #f9c23e;
-  --lightYellow: #f9c23ed1;
+  --mainYellow: #363181;
+  --lightYellow: #363181d4;
   --mainWhite: #fff;
 }
 .bgLightYellow {
@@ -32,7 +32,7 @@ body {
   height: 60px;
 }
 .cta-btn {
-  color: #000;
+  color: #fff;
   background-color: var(--mainYellow);
   border-color: var(--mainYellow);
   border-radius: 5px;
@@ -47,7 +47,7 @@ body {
   letter-spacing: 0.5px;
 }
 .cta-btn:hover {
-  color: #000000bd;
+  color: #fff;
   background-color: var(--lightYellow);
   border-color: var(--lightYellow);
 }
@@ -133,7 +133,7 @@ body {
 .navBtn .btn {
   background-color: var(--mainYellow);
   border: 1px solid var(--mainYellow);
-  color: #000;
+  color: #fff;
   font-weight: 500;
   padding: 12px 29px;
   border-radius: 5px;
@@ -144,7 +144,7 @@ body {
   box-shadow: none;
 }
 .navBtn .btn:hover {
-  color: #000000bd;
+  color: #fff;
   background-color: var(--lightYellow);
   border-color: var(--lightYellow);
 }
@@ -374,11 +374,12 @@ mark {
   -webkit-box-orient: vertical; */
 }
 .counterSec .column .card {
+  color: #fff;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, #f5af41, #f1c40f);
+  background: linear-gradient(to right, #363181, #2b2675d4);
 }
 .servicesCard {
   display: flex;
